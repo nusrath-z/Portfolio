@@ -28,14 +28,14 @@ const Expertise: React.FC = () => {
   return (
     <div className=" w-full flex justify-center p-2">
       <div className="w-full max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold">What I Bring</h2>
+        <h2 className=" text-primary-light text-3xl md:text-4xl font-bold">What I Bring</h2>
         <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {whatIOffer.map((item) => (
             <div
               key={item.title}
               role="listitem"
               tabIndex={0}
-              className="bg-gray-800/60 border border-white/10 rounded-2xl p-5 text-center hover:shadow-xl hover:scale-[1.01] transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+              className="bg-surface shadow-md  hover:bg-surface-hover shadow-primary rounded-2xl p-6 text-center hover:shadow-lg hover:scale-[1.05] "
             >
               <img src={item.icon} alt={item.alt} className="h-12 w-12 mx-auto mb-3" />
               <h3 className="text-lg font-semibold">{item.title}</h3>

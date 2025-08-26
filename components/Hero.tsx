@@ -25,17 +25,17 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Text content */}
-      <div className="z-10 flex-1 w-full text-center md:text-left order-2 md:order-1">
-        <p className="text-base text-gray-300">Hi, I&apos;m</p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+      <div className="z-10 flex-1 w-full text-center md:text-left order-2 md:order-1 ">
+        <p className="text-base text-text-primary">Hi, I&apos;m</p>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  text-text-heading tracking-tight ">
           Nusrath Zaman
         </h1>
         <ContainerTextFlip
-          className="mt-2 text-lg sm:text-xl md:text-2xl text-gray-200"
+          className="mt-2 text-lg sm:text-xl md:text-2xl font-bold text-primary-light " 
           words={["Software Engineer", "Full-Stack Developer", "Machine Learning Enthusiast"]}
         />
 
-        <p className="mt-4 max-w-2xl text-gray-300 mx-auto md:mx-0">
+        <p className="mt-4 max-w-2xl text-text-primary mx-auto md:mx-0">
           Recent Software Engineering graduate building accessible, performant products.
           I love turning ideas into polished, production-ready experiences.
         </p>
@@ -45,9 +45,9 @@ const Hero: React.FC = () => {
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="px-6 py-2 bg-black text-white flex items-center"
+              className="px-6 py-2 bg-primary  text-text-primary font-bold  hover:bg-primary-light hover:shadow-md  shadow-white flex items-center"
             >
-              <span>Resume</span>
+              <span >Resume</span>
               <IconDownload className="ml-2" />
             </HoverBorderGradient>
           </a>
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="px-6 py-2 bg-white text-black dark:bg-black dark:text-white flex items-center"
+              className="px-6 py-2 text-text-primary  bg-primary hover:bg-primary-light hover:shadow-md font-bold  shadow-white flex items-center"
             >
               <span>Contact</span>
               <IconMail className="ml-2" />

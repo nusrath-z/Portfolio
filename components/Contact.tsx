@@ -31,6 +31,7 @@ const Contact: React.FC = () => {
       }
     } catch (err) {
       alert("⚠️ Network error. Please try again.");
+      console.log(err);
     }
   };
 

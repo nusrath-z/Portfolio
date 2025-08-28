@@ -6,7 +6,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card"; // adjust
 import { IconBrandGithub, IconPlayerPlay } from "@tabler/icons-react";
 import { projects } from "@/data/project";
 
-const categories = ["All", "Web", "ML", "CS Fundamentals", "Networking", "Data Analytics"];
+const categories = ["All", "Web", "ML and Data Analytics", "CS Fundamentals", "Networking"];
 
 const ProjectsPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");

@@ -8,10 +8,11 @@ import { HoverBorderGradient } from "@/ui/hover-border-gradient";
 import { ContainerTextFlip } from "@/ui/container-text-flip";
 import { Spotlight } from "@/ui/spotlight-new";
 
+
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 py-16 md:py-24">
-      {/* Background effect */}
+    <div className="relative min-h-screen flex flex-col md:flex-row items-center justify-center gap-8  ">
+
       <Spotlight />
 
       {/* Portrait */}
@@ -26,22 +27,22 @@ const Hero: React.FC = () => {
 
       {/* Text content */}
       <div className="z-10 flex-1 w-full text-center md:text-left order-2 md:order-1 ">
-        <p className="text-base text-text-primary">Hi, I&apos;m</p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  text-text-heading tracking-tight ">
+        <p className="text-base md:text-xl text-text-primary">Hi, I&apos;m</p>
+        <h1 className="text-4xl  md:text-7xl font-extrabold  text-text-heading tracking-tight ">
           Nusrath Zaman
         </h1>
         <ContainerTextFlip
-          className="mt-2 text-lg sm:text-xl md:text-2xl font-bold text-primary-light " 
+          className="mt-1 text-lg sm:text-xl md:text-2xl font-bold text-primary-light " 
           words={["Software Engineer", "Full-Stack Developer", "Machine Learning Enthusiast"]}
         />
 
-        <p className="mt-4 max-w-2xl text-text-primary mx-auto md:mx-0">
+        <p className="mt-1 max-w-2xl text-sm md:text-lg  text-text-primary mx-auto md:mx-0">
           Recent Software Engineering graduate building accessible, performant products.
           I love turning ideas into polished, production-ready experiences.
         </p>
 
         <div className="mt-6 flex gap-3 justify-center md:justify-start">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open resume in new tab">
+          <a href="/Nzresume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open resume in new tab">
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"

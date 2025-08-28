@@ -1,67 +1,5 @@
+import { skills } from "@/data/skills";
 import React from "react";
-import {
-  IconBrandJavascript,
-  IconBrandTypescript,
-  IconBrandPython,
-  IconBrandReact,
-  IconBrandDocker,
-  IconBrandGit,
-  IconBrandMongodb,
-  IconBrandFigma,
-  IconBrandAws,
-  IconBrandBootstrap,
-  IconBrandTailwind,
-} from "@tabler/icons-react";
-
-const skills = {
-  languages: [
-    { name: "Java" },
-    { name: "JavaScript", icon: <IconBrandJavascript size={18} /> },
-    { name: "TypeScript", icon: <IconBrandTypescript size={18} /> },
-    { name: "Python", icon: <IconBrandPython size={18} /> },
-    { name: "SQL" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "C++" },
-  ],
-  frameworks: [
-    { name: "React", icon: <IconBrandReact size={18} /> },
-    { name: "React Native", icon: <IconBrandReact size={18} /> },
-    { name: "Node.js" },
-    { name: "Express" },
-    { name: "Spring Boot" },
-    { name: "Tailwind", icon: <IconBrandTailwind size={18} /> },
-    { name: "Bootstrap", icon: <IconBrandBootstrap size={18} /> },
-  ],
-  databases: [
-    { name: "PostgreSQL" },
-    { name: "MongoDB", icon: <IconBrandMongodb size={18} /> },
-    { name: "Firebase" },
-  ],
-  testing: [
-    { name: "JUnit" },
-    { name: "Jest" },
-    { name: "Cypress" },
-    { name: "Mockito" },
-  ],
-  ml: [
-    { name: "TensorFlow" },
-    { name: "PyTorch" },
-    { name: "Scikit‑learn" },
-    { name: "Pandas" },
-  ],
-  tools: [
-    { name: "Docker", icon: <IconBrandDocker size={18} /> },
-    { name: "AWS (S3, EC2)", icon: <IconBrandAws size={18} /> },
-    { name: "GitHub Actions" },
-    { name: "VS Code" },
-    { name: "Git", icon: <IconBrandGit size={18} /> },
-    { name: "Postman" },
-    { name: "JIRA" },
-    { name: "Figma", icon: <IconBrandFigma size={18} /> },
-    { name: "Android Studio" },
-  ],
-} as const;
 
 const Skills: React.FC = () => {
   return (
@@ -73,7 +11,7 @@ const Skills: React.FC = () => {
             <div key={category} className="bg-surface rounded-2xl p-4 md:p-6 shadow shadow-primary hover:bg-surface-hover hover:shadow-md hover:shadow-primary hover:scale-[1.02]">
               <h3 className="font-semibold text-xl capitalize">{category}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
-                {list.map((s: any) => (
+                {list.map((s) => (
                   <span
                     key={s.name}
                     className="inline-flex items-center gap-1 rounded-full bg-gray-600 px-3 py-1 text-md"

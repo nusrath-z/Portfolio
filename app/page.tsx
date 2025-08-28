@@ -10,10 +10,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { TracingBeam } from "@/ui/tracing-beam";
 import { FloatingNav } from "@/ui/floating_navbar";
-import { IconHome, IconUser, IconMessage, IconStars, IconMail } from "@tabler/icons-react";
+import { IconHome, IconUser, IconMessage, IconStars} from "@tabler/icons-react";
 
 export default function Home() {
-  // Define nav items for floating nav
+
   const navItems = [
     {
       name: "Home",
@@ -40,10 +40,10 @@ export default function Home() {
 
   return (
     <main className="relative bg-black-100 text-white flex flex-col w-full overflow-hidden">
-      {/* Floating Navbar */}
+   
       <FloatingNav navItems={navItems} />
 
-      <TracingBeam className="px-4 sm:px-6 lg:px-8">
+      <TracingBeam className="px-8">
         <Hero />
 
         <div id="main-content" className="space-y-20 md:space-y-28">

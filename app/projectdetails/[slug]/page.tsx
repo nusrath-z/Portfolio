@@ -3,7 +3,7 @@ import { projects } from "@/data/project";
 import Image from "next/image";
 
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return notFound();
 

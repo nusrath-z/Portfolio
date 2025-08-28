@@ -2,9 +2,14 @@ import { notFound } from "next/navigation";
 import { projects } from "@/data/project";
 import Image from "next/image";
 
+interface ProjectPageProps {
+  params: Promise<{ slug: string }>;
+}
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug);
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
+   const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   return (

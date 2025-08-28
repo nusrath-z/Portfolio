@@ -19,6 +19,7 @@ export const projects: Project[] = [
   {
     slug: "sports-club-management",
     title: "Sportganise-Capstone",
+     image: "poster.png",
     category: "Web",
     summary: "Full-stack web & mobile platform for streamlining sports club operations.",
     about:
@@ -42,14 +43,14 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Sisahga/Sportganise",
     drive: "https://drive.google.com/drive/folders/14jw__ADDVr6kwlnhtIaqQ0_GjmR9aSDS?usp=drive_link",
-    image: "/projects/sports-club.png"
+   
   },
 
   {
     slug: "condo-management-system",
     title: "Condo Management System",
      category: "Web",
-    summary: "Agile-based capstone project centralizing condo operations for residents and managers.",
+    summary: "Agile mini-capstone project centralizing condo operations for residents and managers.",
     about:
       "As part of a 10-member team in a mini-capstone course, we developed a full-stack Condo Management System following the Agile (Scrum) methodology, with our Teaching Assistant acting as the client to provide requirements and feedback each sprint. The project addressed common condo management challenges such as fragmented communication, inefficient request handling, and lack of transparency by centralizing operations into a single platform. Key features included a Financial System Page, Property Profile Page, Request Page, Reservation Page, Chat Page, and an OpenAI-powered chatbot for FAQs and automation.",
     tech: ["React Native", "Node.js", "Express.js", "PostgreSQL", "Firebase", "AWS S3", "Cypress"],
@@ -68,12 +69,12 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/AndyChhuon/SOEN390",
     demo: "https://6631cdc7b1c1fb7fa941a152--neon-lebkuchen-4543ff.netlify.app/",
-    image: "/projects/condo-management.png"
+    image: "condo.png"
   },
 
   {
     slug: "ml-course-project",
-     category: "ML",
+     category: "ML and Data Analytics",
     title: "Medical Image Classification",
     summary: "Applied CNNs and Transfer Learning to colorectal cancer dataset for image classification.",
     about:
@@ -91,19 +92,15 @@ export const projects: Project[] = [
       "Demonstrated effective use of Transfer Learning to leverage pre-trained models for new datasets.",
       "Produced clear visualizations of feature embeddings using t-SNE to interpret CNN outputs."
     ],
-    videos: [
-      { title: "Model Training and Visualization Part 1", src: "/videos/ml_project1.mp4" },
-      { title: "Model Evaluation and Transfer Learning Part 2", src: "/videos/ml_project2.mp4" }
-    ],
     github: "https://github.com/nusrath-z/Machine-Learning-Coursework/tree/main/Project",
-    image: "/projects/medical-image.png"
+    image: "medical.png"
   },
 
   {
   slug: "cpu-scheduling-simulator",
   title: "CPU Scheduling Simulation with Priority Queues",
   category: "CS Fundamentals",
-  image: "/projects/cpu-scheduling.png", 
+  image: "cpu.png", 
   summary:
     "Java simulator that executes jobs using four custom priority queues (sorted list, unsorted list, pointer-heap, vector-heap) with starvation avoidance and full performance reporting.",
 
@@ -135,5 +132,29 @@ export const projects: Project[] = [
 
 },
 
-  // ... add the rest from your second list (binary mask, CPU scheduling, etc.)
+{
+  slug: "big-data-analysis-movies",
+  title: "Big Data Analysis: SQL & NoSQL",
+  category: "ML and Data Analytics",
+  summary: "Analyzed movie datasets using PostgreSQL and MongoDB, comparing SQL vs. NoSQL performance.",
+  about:
+    "Collected and integrated real-world movie datasets from Kaggle and designed both relational schemas (PostgreSQL) and document-based models (MongoDB). Created ER and NoSQL model diagrams to provide clear data structure visualizations. Conducted multiple queries to extract insights, benchmarked performance, and analyzed indexing strategies to understand the strengths and trade-offs of SQL vs. NoSQL systems in big data contexts.",
+  tech: ["PostgreSQL", "MongoDB", "Data Modeling", "Indexing", "Query Optimization"],
+  contributions: [
+    "Collected and integrated large-scale movie datasets from Kaggle.",
+    "Designed relational and document-based data models with clear ER and NoSQL diagrams.",
+    "Implemented 10+ queries for actionable insights such as top-rated movies per genre, director performance, and actor collaborations.",
+    "Benchmarked query performance and optimized indexing to reduce query times by 20%.",
+    "Delivered a live demo comparing SQL vs. NoSQL queries, highlighting efficiency, scalability, and system trade-offs."
+  ],
+  achievements: [
+    "Improved query performance by 20% using effective indexing strategies.",
+    "Demonstrated differences in query flexibility and scalability between SQL and NoSQL systems.",
+    "Provided a clear, reproducible framework for analyzing large-scale movie datasets."
+  ],
+  
+  image: "big.png"
+},
+
+
 ];
